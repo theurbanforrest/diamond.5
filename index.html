@@ -1,0 +1,40 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<div class="fc-sitewrap">
+	<analytics></analytics>			<!-- jQuery loads analytics.html -->
+	<universal_nav></universal_nav>	<!-- jQuery loads universal_nav.html -->
+	<tilefeed></tilefeed>			<!-- jQuery loads tilefeed.html -->
+
+	<footer>
+		<i class="fa fa-facebook-square"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-linkedin"></i>
+	<p>Copyright 2015. Diamond.5 NYC</p>
+	</footer>
+<!-- 
+***** BOOTSTRAPS *****
+-->
+
+	<!-- Local Styles -->
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	
+
+	<!-- CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<!-- Load templates -->
+	    <script>
+    		$('analytics').load('analytics.html');
+    		$('universal_nav').load('universal_nav.html');
+    		$('tilefeed').load('tilefeed.html');	
+    	</script>
+
+</body>
+</html>
