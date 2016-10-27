@@ -5,9 +5,13 @@
 <body>
 
 <div class="fc-sitewrap">
-	<analytics></analytics>			<!-- jQuery loads analytics.html -->
+	
 	<universal_nav></universal_nav>	<!-- jQuery loads universal_nav.html -->
 	<tilefeed></tilefeed>			<!-- jQuery loads tilefeed.html -->
+	<analytics></analytics>			<!-- jQuery loads analytics.html 
+										Must load AFTER all clickable elements to work
+										since it's jQuery.load()
+									-->
 
 	<footer>
 		<i class="fa fa-facebook-square"></i>

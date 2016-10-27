@@ -15,14 +15,28 @@
 
 
 	<script>
-		/*DOM READY*/
-
+		/*DOM READY
 		$(document).ready(function(){
 			dataLayer.push(
 			{
 				'event' : 'screen viewed by user',
 				'eventCat' : 'page load',
 				'eventName' : 'page view',
+				'url' : document.URL
+			});
+		});*/
+
+		/*NAV CLICKS*/
+		$('.nav-element').click(function(){
+			console.log("upper nav clicked detected");	//debug
+
+			var idOfNav = $(this).attr('id');
+			dataLayer.push(
+			{
+				'event' : 'upper nav clicked',
+				'eventCat' : 'user click',
+				'eventName' : 'nav click',
+				'catchall' : idOfNav,
 				'url' : document.URL
 			});
 		});
